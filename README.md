@@ -1,99 +1,166 @@
-📊 Customer Retention & Churn Analysis
-FUTURE_DS_02 – Data Science & Analytics Internship
+# 📊 Telco Customer Churn Analysis  
+### FUTURE_DS_02 – Data Science & Analytics Internship  
+**Organization:** Future Interns  
+**Intern:** Vicky Razz  
 
-Organization: Future Interns
-Author: Vicky Razz
+---
 
-📘 Project Overview
+## 📘 Project Overview  
 
-This project analyzes customer churn behavior in a subscription-based telecom company.
-The objective is to identify churn drivers, evaluate retention trends, estimate Customer Lifetime Value (CLV), and provide actionable recommendations to reduce customer attrition.
+This project analyzes customer churn behavior in a subscription-based telecom company using the Telco Customer Churn dataset.
 
-The analysis was conducted entirely using Python and Jupyter Notebook, focusing on business insights and data-driven decision-making.
+The objective of this analysis was to:
 
-🎯 Business Objectives
+- Measure overall churn and retention performance  
+- Identify key behavioral and contractual churn drivers  
+- Perform tenure-based retention analysis  
+- Estimate Customer Lifetime Value (CLV)  
+- Develop a predictive model to estimate churn probability  
 
-Measure overall churn and retention rate
+The project combines business analytics, retention strategy insights, and foundational machine learning.
 
-Identify demographic and behavioral churn drivers
+---
 
-Analyze contract type impact
+## 📊 Dataset  
 
-Perform tenure-based retention (cohort-style) analysis
+**Dataset:** WA_Fn-UseC_-Telco-Customer-Churn.csv  
 
-Estimate Customer Lifetime Value (CLV)
+The dataset includes:
 
-Provide strategic recommendations
+- Customer demographics  
+- Service subscriptions  
+- Contract details  
+- Monthly charges & total charges  
+- Tenure  
+- Churn status  
 
-📊 Key Performance Indicators (KPIs)
+---
 
-Churn Rate (%)
+## 🎯 Key KPIs Analyzed  
 
-Retention Rate (%)
+- 📌 Churn Rate (~26%)  
+- 📌 Retention Rate (~74%)  
+- 📌 Average Monthly Charges  
+- 📌 Average Customer Tenure  
+- 📌 Customer Lifetime Value (CLV)  
+- 📌 Churn by Contract Type  
+- 📌 Churn by Tenure Group  
 
-Average Monthly Charges
+---
 
-Average Customer Tenure
+## 🔍 Key Insights  
 
-Estimated CLV
+### 1️⃣ Churn Rate  
+The company experiences approximately **26% churn**, indicating a significant retention challenge.
 
-Churn by Contract Type
+---
 
-Churn by Tenure Group
+### 2️⃣ Contract Type Impact  
+- Month-to-month customers show the highest churn.  
+- One-year and two-year contracts significantly reduce churn risk.  
 
-Churn by Demographics
+**Insight:** Long-term contracts improve retention stability.
 
-🔍 Key Insights
+---
 
-Month-to-month contracts show the highest churn risk.
+### 3️⃣ Tenure-Based Retention  
+- Highest churn occurs within the first 12 months.  
+- Retention stabilizes after 24 months.  
 
-Customers in their first 12 months are most likely to leave.
+**Insight:** Early onboarding and engagement are critical.
 
-Higher monthly charges increase churn probability.
+---
 
-Long-term contracts improve retention and lifetime value.
+### 4️⃣ Monthly Charges & Churn  
+- Customers with higher monthly charges show increased churn probability.  
+- Pricing sensitivity plays an important role in attrition.
 
-Retention stabilizes significantly after 24 months.
+---
 
-💰 Customer Lifetime Value (CLV)
+### 5️⃣ Customer Lifetime Value (CLV)  
 
 CLV was estimated using:
 
-CLV = Average Monthly Charges × Average Tenure
 
+Retained customers generate significantly higher lifetime revenue compared to churned customers.
 
-Retained customers generate substantially higher lifetime revenue compared to churned customers, emphasizing the financial importance of retention strategies.
+**Insight:** Improving early retention directly increases long-term profitability.
 
-🤖 Predictive Modeling (Optional)
+---
 
-A Logistic Regression model framework was developed to estimate churn probability and identify high-risk customers.
+## 🤖 Predictive Modeling – Logistic Regression  
 
-Key predictive features include:
+A Logistic Regression model was implemented to predict churn probability.
 
-Contract Type
+### Key Influential Features:
+- Contract Type  
+- Tenure  
+- Monthly Charges  
+- Internet Service  
 
-Tenure
+The model enables proactive identification of high-risk customers and supports targeted retention strategies.
 
-Monthly Charges
+---
 
-Internet Service Type
+## 📈 Visual Analysis Performed  
 
-🛠 Tools & Technologies Used
+- Churn distribution analysis  
+- Contract vs churn comparison  
+- Tenure group segmentation  
+- Monthly charge distribution by churn  
+- Correlation heatmap  
+- Confusion matrix for model evaluation  
+- CLV comparison (Churn vs Non-Churn)  
 
-Python (Pandas, NumPy, Matplotlib, Seaborn)
+---
 
-Jupyter Notebook
+## 🛠 Tools & Technologies  
 
-GitHub
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+- Jupyter Notebook  
 
-📂 Repository Structure
+---
+
+## 📂 Repository Structure  
+
 FUTURE_DS_02/
 │
 ├── data/
+│ └── WA_Fn-UseC_-Telco-Customer-Churn.csv
+│
 ├── notebooks/
+│ └── FUTURE_DS_02.ipynb
+│
 ├── report/
+│ └── FUTURE_DS_02_Concise_Report.pdf
+│
 └── README.md
 
-📌 Conclusion
 
-This project demonstrates applied retention analytics, cohort-style tenure analysis, lifetime value estimation, and predictive modeling aligned with real-world business scenarios.
+---
+
+## 📌 Strategic Recommendations  
+
+1. Promote long-term contracts through loyalty incentives.  
+2. Improve onboarding during the first 12 months.  
+3. Monitor high monthly charge customers for churn risk.  
+4. Implement predictive churn monitoring.  
+
+---
+
+## 🏁 Conclusion  
+
+This project demonstrates applied:
+
+- Retention Analytics  
+- Cohort-style Tenure Analysis  
+- Customer Lifetime Value Estimation  
+- Predictive Modeling  
+- Insight-driven Decision Making  
+
+The findings highlight clear opportunities to reduce churn and improve long-term revenue sustainability.
